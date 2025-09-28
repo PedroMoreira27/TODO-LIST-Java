@@ -1,0 +1,9 @@
+CREATE TABLE IF NOT EXISTS tarefas (
+  id SERIAL PRIMARY KEY,
+  nome VARCHAR(255) NOT NULL,
+  descricao TEXT,
+  status VARCHAR(50) NOT NULL DEFAULT 'PENDENTE',
+  observacoes TEXT,
+  data_criacao TIMESTAMP WITH TIME ZONE NOT NULL,
+  data_atualizacao TIMESTAMP WITH TIME ZONE
+);
